@@ -78,25 +78,6 @@ input[type="number"] {
     margin-bottom: 10px;
 }
 
-body {
-    font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #028476;
-    color: #001c17;
-}
-
-#content {
-    text-align: center;
-}
-
-form {
-    margin-bottom: 20px;
-}
-
 .inputContainer {
     display: flex;
     align-items: normal;
@@ -114,8 +95,7 @@ form {
     border-bottom: 4px solid #001c17;
     margin-right: 10px;
     outline: none;
-    transition: border-color 0.3s;
-    /* Updated transition property */
+    transition: border-color 0.3s, padding-bottom 0.3s; /* Updated transition property */
 }
 
 .nameInput::placeholder,
