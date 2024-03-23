@@ -1,0 +1,162 @@
+/* CSS */
+
+.button-56 {
+    align-items: center;
+    background-color: #A5CFE3;
+    border: 1px solid #111;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 8px;
+    height: 34px;
+    justify-content: center;
+    line-height: 12px;
+    max-width: 40%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-56:after {
+    background-color: #111;
+    border-radius: 6px;
+    content: "";
+    display: block;
+    height: 34px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button-56:hover:after {
+    transform: translate(0, 0);
+}
+
+.button-56:active {
+    background-color: #A5CFE3;
+    outline: 0;
+}
+
+.button-56:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .button-56 {
+        padding: 0 40px;
+    }
+}
+
+/* Additional CSS */
+#message {
+    display: none;
+    color: rgb(0, 0, 0);
+    background-color: #A5CFE3;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input[type="number"] {
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: #A5CFE3;
+    color: #111;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #028476;
+    color: #001c17;
+}
+
+#content {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: normal;
+    margin-bottom: 11px;
+}
+
+.nameInput,
+.emailInput {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 6px;
+    border: none;
+    border-radius: 0px;
+    background-color: #00000000;
+    border-bottom: 4px solid #001c17;
+    margin-right: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+    /* Updated transition property */
+}
+
+.nameInput::placeholder,
+.emailInput::placeholder {
+    color: #00221C;
+}
+
+.nameInput:last-child,
+.emailInput:last-child {
+    margin-right: 0;
+}
+
+/* Merged styles from .form__field and .form__label */
+.nameInput:focus,
+.emailInput:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: px;
+    border-image: linear-gradient(to right, #147870, #A5CFE3);
+    border-image-slice: 1;
+}
+
+.nameInput:focus~.form__label,
+.nameInput:valid~.form__label,
+.emailInput:focus~.form__label,
+.emailInput:valid~.form__label {
+    font-size: 1px;
+    cursor: text;
+    top: 20px;
+    color: #9b9b9b;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+
+.input-error {
+    border-color: red;
+}

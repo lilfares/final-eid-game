@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Name Pairs Generator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <h1>Random Name Pairs Generator</h1>
+        <form id="nameForm">
+            <label for="numPeople">Enter the number of people:</label>
+            <input type="number" id="numPeople" min="1" value="1" required><br><br>
+            <div id="namesContainer">
+                <!-- Names and emails input fields will be dynamically added here -->
+            </div>
+            <button id="generateButton" class="button-56" type="button">Generate Pairs and Send Emails</button>
+
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</body>
+
+</html>
