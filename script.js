@@ -143,7 +143,7 @@ function generatePairsAndSendEmails(names, emails) {
     document.getElementById("generateButton").style.display = "none";
 
     // Display success message
-    showMessage("Check your email for your partner", "green");
+    showMessage("Check your email for your partner Name", "green");
 
     // Your existing code for sending emails goes here
     finalPairs.forEach(function (pair) {
@@ -172,7 +172,7 @@ function restoreExistingInputValues(existingValues, selector) {
 
 
 function sendmail(name, email, partnerInfo) {
-    var emailContent = "Hello " + name + ",\n\nYour partner's name is:\n" + partnerInfo + "\n\nShhhhhh......,\nkeep it a secret from the others";
+    var emailContent = "Hello " + name + ",\n\nYour partner's name is:\n" + partnerInfo + "\n\nShhhhhh......,keep it a secret from the others";
 
     emailjs.init("i6KyGq-c2RNvzy5ez"); // Replace with your EmailJS User ID
 
