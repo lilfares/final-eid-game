@@ -172,7 +172,21 @@ function restoreExistingInputValues(existingValues, selector) {
 
 
 function sendmail(name, email, partnerInfo) {
-    var emailContent = "Hello " + name + ",\n\nYour partner's name is:\n" + partnerInfo + "\n\nShhhhhh......,keep it a secret from the others";
+    var emailContent = "مرحبا " + name + "،
+
+🎁 لديك رسالة سرية بخصوص العيد! افتح البريد لمعرفة التفاصيل. 🤫✨
+
+.
+.
+.
+
+(بعد عدة أسطر فارغة لجعل التفاصيل غير مرئية في الإشعارات)
+
+✨ شريكك السري هو: " + partnerInfo + " ✨
+
+لكن احذر... 🤫 لا تخبر أحدًا! دَعها مفاجأة حتى يوم العيد! 😏🎉
+
+";
 
     emailjs.init("i6KyGq-c2RNvzy5ez"); // Replace with your EmailJS User ID
 
