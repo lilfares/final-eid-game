@@ -180,7 +180,7 @@ function sendmail(name, email, partnerInfo) {
 "- لا تخبر أحدًا! دَعها مفاجأة حتى يوم العيد! 😏🎉\n\n" +
 "- ابقَ مستعدًا للمفاجآت! 🎉\n\n\n" +
 "🎉 *نتمنى لك عيدًا سعيدًا!* 🎉";
- ";
+ 
 
     emailjs.init("i6KyGq-c2RNvzy5ez"); // Replace with your EmailJS User ID
 
