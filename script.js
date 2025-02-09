@@ -179,8 +179,8 @@ function sendmail(name, email, partnerInfo) {
 .
 .
 .
-
-(بعد عدة أسطر فارغة لجعل التفاصيل غير مرئية في الإشعارات)
+.
+.
 
 ✨ شريكك السري هو: " + partnerInfo + " ✨
 
